@@ -1,26 +1,45 @@
 .wrapper {
-    overflow: hidden;
-    padding-right: 18px;
-    padding-left: 18px;
-    max-width: 1236px;
-    margin-left: auto;
-    margin-right: auto;
+	overflow: hidden;
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
 
+	&--medium {
+		max-width: 976px;
+	}
 
-    &--medium {
-        max-width: 976px;
-    }
+	&--no-padding-until-medium {
+		padding-left: 0;
+		padding-right: 0;
 
-    .wrapper {
-        padding-right: 0;
-        padding-left: 0;
-    }
+		@mixin atMedium {
+			padding-left: 18px;
+			padding-right: 18px;
+		}
+	}
 
-    &--b-margin {
-        margin-bottom: 1rem;
+	&--no-padding-until-large {
+		padding-left: 0;
+		padding-right: 0;
 
-        @mixin atSmall {
-            margin-bottom: 3.875rem;
-        }
-    }
+		@mixin atLarge {
+			padding-left: 18px;
+			padding-right: 18px;
+		}
+	}
+
+	.wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&--b-margin {
+		margin-bottom: 1rem;
+
+		@mixin atSmall {
+			margin-bottom: 3.875rem;
+		}
+	}
 }
