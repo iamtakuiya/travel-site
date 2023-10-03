@@ -10,7 +10,11 @@
     "axios": "^1.4.0",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
+<<<<<<< HEAD
     "postcss-color-rgba-fallback": "^4.0.0",
+    "postcss-for": "^2.1.1",
+=======
+>>>>>>> parent of 5d4d639 (Finished Floating Styliing)
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

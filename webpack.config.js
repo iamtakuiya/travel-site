@@ -3,8 +3,12 @@ const path = require('path')
 const postCSSPlugins = [
   require('postcss-import'),
   require('postcss-mixins'),
+<<<<<<< HEAD
   require('postcss-hexrgba'),
+  require('postcss-for'),
   require('postcss-color-rgba-fallback'),
+=======
+>>>>>>> parent of 5d4d639 (Finished Floating Styliing)
   require('postcss-simple-vars'),
   require('postcss-nested'),
   require('autoprefixer')
