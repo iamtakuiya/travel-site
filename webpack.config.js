@@ -4,6 +4,7 @@ const postCSSPlugins = [
   require('postcss-import'),
   require('postcss-mixins'),
   require('postcss-hexrgba'),
+  require('postcss-for'),
   require('postcss-color-rgba-fallback'),
   require('postcss-simple-vars'),
   require('postcss-nested'),

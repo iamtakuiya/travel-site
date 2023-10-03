@@ -20,6 +20,8 @@
 	}
 
 	&__title {
+		grid-column: 1;
+		grid-row: 1;
 		font-weight: 300;
 		color: $mainBlue;
 		margin: 0;
