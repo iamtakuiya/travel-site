@@ -3,13 +3,20 @@
 	position: absolute;
 	width: 100%;
 	z-index: 2;
+	transition: background-color 0.3s ease-out;
+
+	&--is-expanded {
+		background-color: rgba($mainBlue, 0.55);
+	}
 
 	@mixin atMedium {
-		background-color: rgba(47, 85, 114, 0.3);
+		background-color: rgba($mainBlue, 0.3);
 	}
 
 	&__btn-container {
-		float: right;
+		@mixin atMedium {
+			float: right;
+		}
 	}
 
 	&__logo {
@@ -45,14 +52,27 @@
 	}
 
 	&__menu-content {
-		display: none;
+		opacity: 0;
+		transform: scale(1.2);
+		transition: all 0.3s ease-out;
+		/* Below this CSS is for preventing any event */
+		z-index: 10;
+		pointer-events: none;
+		padding-top: 90px;
+		text-align: center;
 
 		@mixin atMedium {
-			display: block;
+			opacity: 1;
+			z-index: 1;
+			pointer-events: visible;
+			padding-top: 0;
 		}
 
 		&--is-visible {
-			display: block;
+			opacity: 1;
+			transform: scale(1);
+			z-index: 1;
+			pointer-events: visible;
 		}
 	}
 }
