@@ -15,7 +15,7 @@ class MobileMenu {
 	toggleTheMenu() {
 		this.menuContent.classList.toggle('site-header__menu-content--is-visible');
 		this.siteHeader.classList.toggle('site-header--is-expanded');
-		console.log('Hooray');
+		this.menuIcon.classList.toggle('site-header__menu-icon--close-x');
 	}
 }
 
