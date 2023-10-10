@@ -16,6 +16,7 @@
 	}
 }
 
+/* No longer need clearfix but leave for reference */
 @define-mixin clearfix {
 	&::after {
 		content: '';
