@@ -57,7 +57,6 @@ class StickyHeader {
 				let matchingLink = el.getAttribute(`data-matching-link`);
 				document.querySelectorAll(`.primary-nav a:not(${matchingLink})`).forEach(el => el.classList.remove('is-current-link'));
 				document.querySelector(matchingLink).classList.add('is-current-link');
-				console.log('color changed');
 			}
 		}
 	}
