@@ -87,7 +87,7 @@ if (currentTask == 'build') {
 	config.output = {
 		filename: '[name].[chunkhash].js',
 		chunkFilename: '[name].[chunkhash].js',
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'docs'),
 		clean: true
 	};
 	config.mode = 'production';
