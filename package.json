@@ -11,6 +11,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"axios": "^1.5.1",
 		"css-minimizer-webpack-plugin": "^4.2.2",
 		"lodash": "^4.17.21",
 		"postcss-nested": "^6.0.0",
