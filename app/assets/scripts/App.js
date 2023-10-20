@@ -4,6 +4,20 @@ import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 import ClientArea from './modules/ClientArea';
 
+// React Related Code Goes here
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+// Import React components that we created
+import MyAmazingComponent from './modules/MyAmazingComponent';
+
+const root = ReactDOM.createRoot(document.querySelector('#my-react-example'));
+root.render(
+	<React.StrictMode>
+		<MyAmazingComponent />
+	</React.StrictMode>
+);
+
 new ClientArea();
 new StickyHeader();
 
